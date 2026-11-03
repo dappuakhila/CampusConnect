@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusConnect | College Portal</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="loginView" class="login-wrap">
+    <section class="hero">
+      <div class="brand"><span class="brand-icon">C</span> CampusConnect</div>
+      <div class="hero-copy">
+        <small>YOUR CAMPUS. ONE PLACE.</small>
+        <h1>Make your college life <span>connected.</span></h1>
+        <p>Classes, attendance, assignments and campus updates — all in one simple portal.</p>
+      </div>
+      <div class="hero-foot">01&nbsp;&nbsp; Learn　　02&nbsp;&nbsp; Connect　　03&nbsp;&nbsp; Grow</div>
+    </section>
+    <section class="login-panel">
+      <form id="loginForm" class="login-card">
+        <small class="eyebrow">GET STARTED</small>
+        <h2>Welcome to CampusConnect</h2>
+        <p class="muted">Sign in to your student portal</p>
+        <label>Full name</label>
+        <input id="studentName" value="Akhila Dappu" required>
+        <label>Roll number</label>
+        <input id="rollNumber" value="24WH1A05U6" required>
+        <label>Department</label>
+        <select id="department"><option>CSE</option><option>IT</option><option>ECE</option><option>EEE</option><option>AI & DS</option></select>
+        <button class="primary" type="submit">Open my dashboard <span>→</span></button>
+        <p class="hint">Quick demo login · No Firebase setup required</p>
+      </form>
+    </section>
+  </div>
+
+  <div id="appView" class="app hidden">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-icon">C</span> CampusConnect</div>
+      <div class="profile-mini"><div class="avatar" id="avatar">A</div><div><b id="sideName">Student</b><small id="sideRoll">Roll number</small></div></div>
+      <nav>
+        <button class="nav active" data-page="dashboard">▦　 Dashboard</button>
+        <button class="nav" data-page="attendance">◷　 Attendance</button>
+        <button class="nav" data-page="timetable">▤　 Timetable</button>
+        <button class="nav" data-page="assignments">✓　 Assignments</button>
+        <button class="nav" data-page="announcements">♢　 Announcements</button>
+        <button class="nav" data-page="events">▣　 Campus Events</button>
+        <button class="nav" data-page="notes">✎　 My Notes</button>
+        <button class="nav" data-page="profile">◎　 My Profile</button>
+      </nav>
+      <button id="logoutBtn" class="logout">↪　 Sign out</button>
+    </aside>
+    <main class="main">
+      <header class="topbar"><div><small class="eyebrow">STUDENT PORTAL</small><h2 id="welcomeTitle">Good morning!</h2></div><div class="top-right"><button id="themeBtn" class="utility-btn" type="button">☾ Theme</button><span class="live-dot"></span> Demo mode <div class="avatar small-avatar" id="topAvatar">A</div></div></header>
+      <section id="pageContent"></section>
+      <footer>CampusConnect · College Management Portal · Quick Demo Version</footer>
+    </main>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
